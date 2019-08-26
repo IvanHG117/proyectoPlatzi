@@ -1,0 +1,14 @@
+{% load static %}
+<div class="row">
+    <div class="col">
+    <img class="logo1" src="{% static 'img/escudo_fi_color.png' %}" width="70%" height="70%" alt="escudo fi">
+    </div>
+    <div class="col">
+        {% for e in entrada %}
+            <h1>{{ e.titulo | safe}}</h1>
+        {% endfor %}
+    </div>
+    <div class="col">
+    <img class="logo2" src="{% static 'img/escudo_unam.png'%}" width="70%" height="70%" alt="esudo_Unam">
+    </div>
+</div>
